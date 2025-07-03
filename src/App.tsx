@@ -74,6 +74,16 @@ const questions: Question[] = [
     options: ["npm start", "npm run start", "npm init", "npm install"],
     answer: "npm start"
   },
+  {
+    question: 'How do you stop a Node project?',
+    options: ["npm stop", "npm run stop", "npm quit", "Ctrl + C"],
+    answer: "Ctrl + C"
+  },
+  {
+    question: 'what does npm audit do?',
+    options: ["installs updates", "runs security audit on dependencies", "deletes unused packages", "starts the server"],
+    answer: "runs security audit on dependencies",
+  },
 ];
 
 function App() {
