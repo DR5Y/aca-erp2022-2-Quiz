@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import logo from './aca.png';
 import './App.css';
 
-
 type Question = {
-  question: string,
-  options: string[],
-  answer: string,
+  question: string;
+  options: string[];
+  answer: string;
 };
 
 const questions: Question[] = [
@@ -16,7 +15,7 @@ const questions: Question[] = [
     answer: "Merge",
   },
   {
-    question: 'What command initializes a new Gitrepository?',
+    question: 'What command initializes a new Git repository?',
     options: ["git init", "git start", "git new", "git create"],
     answer: "git init"
   },
@@ -30,44 +29,85 @@ const questions: Question[] = [
     options: ["git history", "git status", "git log", "git commits"],
     answer: "git log"
   },
+  {
+    question: 'Which command clones a repository from Github?',
+    options: ["git download URL", "git clone URL", "git fetch URL", "git copy URL"],
+    answer: "git clone URL"
+  },
+  {
+    question: 'What command creates a new branch?',
+    options: ["git new branchName", "git branch branchName", "git create branch branchName", "git checkout branchName"],
+    answer: "git branch branchName"
+  },
+  {
+    question: 'How do you push commits to Github?',
+    options: ["git push", "git commit", "git pull", "git fetch"],
+    answer: "git push"
+  },
+  {
+    question: 'What command removes a file from your repository?',
+    options: ["git delete", "git remove", "git rm", "git delete file"],
+    answer: "git rm"
+  },
+  {
+    question: 'How do you create a new repository on Github via terminal?',
+    options: ["git create repository", "git new repository", "git init repository", "gh repo create"],
+    answer: "gh repo create"
+  },
+  {
+    question: 'How do you remane a branch?',
+    options: ["git remane branchName newBranchName", "git branch -m oldName newName", "git switch newName", "git change branch newName"],
+    answer: "git branch -m oldName newName"
+  },
+  {
+    question: 'Which command initializes a new Node project?',
+    options: ["npm init", "npm start", "npm install", "npm create"],
+    answer: "npm init"
+  },
+  {
+    question: 'How do you install a package in your Node project?',
+    options: ["npm install package", "npm add package", "npm use package", "npm get package"],
+    answer: "npm install package"
+  },
+  {
+    question: 'How do you start a Node project?',
+    options: ["npm start", "npm run start", "npm init", "npm install"],
+    answer: "npm start"
+  },
 ];
 
 function App() {
-  //state to score the users score.
   const [score, setScore] = useState<number | null>(null);
-  //state to score the users selected answers as a object with key=index and value=selected option
-  const [userAnswers, setUserAnswers] = useState<{[key:number]: string}>({});
+  const [userAnswers, setUserAnswers] = useState<{ [key: number]: string }>({});
 
   const handleOptionChange = (index: number, option: string) => {
-    setUserAnswers(prev => ({...prev, [index]: option}));
+    setUserAnswers(prev => ({ ...prev, [index]: option }));
   };
 
-  //function to calculate and set the users final score upon submitting the quiz
   const submitQuiz = () => {
-    let tempScore = 0; //this is going to be my temporary score counter
+    let tempScore = 0;
     questions.forEach((q, index) => {
       if (userAnswers[index] === q.answer) {
         tempScore++;
-    }
-  });
-  setScore(tempScore);
-};
-
+      }
+    });
+    setScore(tempScore);
+  };
 
   return (
     <div className="App">
       <h1>ACA Multiple Choice Quiz</h1>
       <header className="App-header">
-        <img src={logo} style={{maxWidth:150, maxHeight:150}} className="App-logo" alt="logo" />
+        <img src={logo} style={{ maxWidth: 150, maxHeight: 150 }} className="App-logo" alt="logo" />
         <a
           className="App-link"
           href="https://africacode.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          I Love ACA
+        
         </a>
-      
+
         <form>
           {questions.map((q, index) => (
             <div key={index}>
@@ -75,16 +115,16 @@ function App() {
               {q.options.map(option => (
                 <label key={option}>
                   <input
-                  type="radio"
-                  name={`q${index}`} //to ensure options are grouped per question
-                  value={option
-                  checked={userAnswers[index] === option} //set as checked if userAnswers match
-                  onChange={() => handleOptionChange(index, option)}
+                    type="radio"
+                    name={`q${index}`}
+                    value={option}
+                    checked={userAnswers[index] === option}
+                    onChange={() => handleOptionChange(index, option)}
                   />
                   {option}
                 </label>
               ))}
-              <hr/>
+              <hr />
             </div>
           ))}
         </form>
@@ -93,7 +133,7 @@ function App() {
       <button onClick={submitQuiz}>Submit</button>
       {score !== null && (
         <div>
-        <h2>Your score: {score} / {questions.length}</h2>
+          <h2>Your score: {score} / {questions.length}</h2>
         </div>
       )}
     </div>
