@@ -30,23 +30,24 @@ const LoginPage = () => {
             <form onSubmit={handleSubmit}>
                 <input
                 type="email"
+                placeholder="Please enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 />
                 <input
                 type="password"
-                placeholder="Password"
+                placeholder="Please enter your password"
                 value={password}
                 onChange={e => setPassword(e.target.value)}
                 required
                 />
                 <button type="submit">{isRegister ? "Register" : "Login"}</button>
+                    {error && <p className="error-message">{error}</p>}
             </form>
             <button onClick={() => setIsRegister(!isRegister)}>
                 {isRegister ? "Already have an account? Login" : "Dont have an account? Register"}
             </button>
-            {error && <p style={{color:"red"}}>{error}</p>}
         </div>
     );
 };

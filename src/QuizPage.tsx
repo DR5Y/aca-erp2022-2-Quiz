@@ -26,7 +26,7 @@ const QuizPage = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try{
-        const querySnapshot = await getDocs(collection(db, "questions"));
+        const querySnapshot = await getDocs(collection(db, "quizQuestions"));
         const qArray: Question[] = [];
         querySnapshot.forEach(doc => {
           qArray.push({ id: doc.id, ...doc.data() } as Question);
