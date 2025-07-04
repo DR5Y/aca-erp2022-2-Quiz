@@ -1,0 +1,252 @@
+[
+    {
+        "question": "What Git command do I use when I want to combine my newly developed code to an existing code in my repository?",
+        "options": ["Commit", "Merge", "Pull", "Push"],
+        "answer": "Merge"
+    },
+    {
+        "question": "What command initializes a new Git repository?",
+        "options": ["git init", "git start", "git new", "git create"],
+        "answer": "git init"
+    },
+    {
+        "question": "How do you check the status of files in your Git repository?",
+        "options": ["git check", "git status", "git log", "git show"],
+        "answer": "git status"
+    },
+    {
+        "question": "What command shows your commit history?",
+        "options": ["git history", "git status", "git log", "git commits"],
+        "answer": "git log"
+    },
+    {
+        "question": "Which command clones a repository from Github?",
+        "options": ["git download URL", "git clone URL", "git fetch URL", "git copy URL"],
+        "answer": "git clone URL"
+    },
+    {
+        "question": "What command creates a new branch?",
+        "options": ["git new branchName", "git branch branchName", "git create branch branchName", "git checkout branchName"],
+        "answer": "git branch branchName"
+    },
+    {
+        "question": "How do you push commits to Github?",
+        "options": ["git push", "git commit", "git pull", "git fetch"],
+        "answer": "git push"
+    },
+    {
+        "question": "What command removes a file from your repository?",
+        "options": ["git delete", "git remove", "git rm", "git delete file"],
+        "answer": "git rm"
+    },
+    {
+        "question": "How do you create a new repository on Github via terminal?",
+        "options": ["git create repository", "git new repository", "git init repository", "gh repo create"],
+        "answer": "gh repo create"
+    },
+    {
+        "question": "How do you remane a branch?",
+        "options": ["git remane branchName newBranchName", "git branch -m oldName newName", "git switch newName", "git change branch newName"],
+        "answer": "git branch -m oldName newName"
+    },
+    {
+        "question": "Which command initializes a new Node project?",
+        "options": ["npm init", "npm start", "npm install", "npm create"],
+        "answer": "npm init"
+    },
+    {
+        "question": "How do you install a package in your Node project?",
+        "options": ["npm install package", "npm add package", "npm use package", "npm get package"],
+        "answer": "npm install package"
+    },
+    {
+        "question": "How do you start a Node project?",
+        "options": ["npm start", "npm run start", "npm init", "npm install"],
+        "answer": "npm start"
+    },
+    {
+        "question": "How do you stop a Node project?",
+        "options": ["npm stop", "npm run stop", "npm quit", "Ctrl + C"],
+        "answer": "Ctrl + C"
+    },
+    {
+        "question": "what does npm audit do?",
+        "options": ["installs updates", "runs security audit on dependencies", "deletes unused packages", "starts the server"],
+        "answer": "runs security audit on dependencies"
+    },
+    {
+        "question": "Which command deploys a site to Vercel?",
+        "options": ["vercel deploy", "vercel push", "vercel upload", "vercel start"],
+        "answer": "vercel deploy"
+    },
+    {
+        "question": "What is the default build output directory for Vercel when deploying a React app?",
+        "options": ["build/", "dist/", "public/", "out/"],
+        "answer": "build/"
+    },
+    {
+        "question": "Which file is used by Vercel to configure project settings?",
+        "options": ["vercel.json", "package.json", "config.json", ".env"],
+        "answer": "vercel.json"
+    },
+    {
+        "question": "What command initializes a Vercel project in your terminal?",
+        "options": ["vercel init", "vercel setup", "vercel", "vercel start"],
+        "answer": "vercel"
+    },
+    {
+        "question": "Which NPM command lists globally installed packages?",
+        "options": ["npm list", "npm list -g", "npm show", "npm view"],
+        "answer": "npm list -g"
+    },
+    {
+        "question": "What does npm update do?",
+        "options": ["Installs a package", "Removes a package", "Updates all packages to latest compatible versions", "Deletes node_modules"],
+        "answer": "Updates all packages to latest compatible versions"
+    },
+    {
+        "question": "Which command uninstalls a package?",
+        "options": ["npm remove package", "npm delete package", "npm uninstall package", "npm purge package"],
+        "answer": "npm uninstall package"
+    },
+    {
+        "question": "Which command checks for outdated packages in your project?",
+        "options": ["npm outdated", "npm old", "npm audit", "npm version"],
+        "answer": "npm outdated"
+    },
+    {
+        "question": "What does WSL stand for?",
+        "options": ["Windows Subsystem for Linux", "Windows System Language", "Web Server Loader", "Windows Software Library"],
+        "answer": "Windows Subsystem for Linux"
+    },
+    {
+        "question": "How do you install WSL on Windows 10?",
+        "options": ["Download Ubuntu from Microsoft Store", "Run 'wsl --install' in PowerShell as admin", "Install VirtualBox", "Install VMware"],
+        "answer": "Run 'wsl --install' in PowerShell as admin"
+    },
+    {
+        "question": "Which command shows your installed WSL distributions?",
+        "options": ["wsl --list", "wsl --show", "wsl --versions", "wsl --installed"],
+        "answer": "wsl --list"
+    },
+    {
+        "question": "What does 'wsl --update' do?",
+        "options": ["Updates your WSL kernel version", "Installs a new distro", "Deletes WSL", "Shows version info"],
+        "answer": "Updates your WSL kernel version"
+    },
+    {
+        "question": "Which command sets your default WSL distro?",
+        "options": ["wsl --set-default <distro>", "wsl --default <distro>", "wsl --use <distro>", "wsl --switch <distro>"],
+        "answer": "wsl --set-default <distro>"
+    },
+    {
+        "question": "How do you launch WSL from Windows terminal?",
+        "options": ["Type 'wsl'", "Type 'bash'", "Both 'wsl' and 'bash'", "Only 'bash'"],
+        "answer": "Both 'wsl' and 'bash'"
+    },
+    {
+        "question": "Which WSL version supports full system call compatibility for Linux binaries?",
+        "options": ["WSL 1", "WSL 2", "WSL Core", "WSL Lite"],
+        "answer": "WSL 2"
+    },
+    {
+        "question": "What command creates a new React app using Create React App?",
+        "options": ["npx create-react-app myapp", "npm create react-app myapp", "npm install react myapp", "npm start react myapp"],
+        "answer": "npx create-react-app myapp"
+    },
+    {
+        "question": "Which file is the entry point for a React app?",
+        "options": ["index.html", "index.js", "App.js", "main.js"],
+        "answer": "index.js"
+    },
+    {
+        "question": "What does JSX stand for?",
+        "options": ["JavaScript XML", "Java Syntax Extension", "JavaScript Extension", "JavaScript X"],
+        "answer": "JavaScript XML"
+    },
+    {
+        "question": "Which hook lets you add state to a functional component?",
+        "options": ["useProps", "useEffect", "useState", "useHook"],
+        "answer": "useState"
+    },
+    {
+        "question": "How do you pass data from parent to child component?",
+        "options": ["Using props", "Using state", "Using context", "Using hooks"],
+        "answer": "Using props"
+    },
+    {
+        "question": "What is the correct syntax for a React fragment?",
+        "options": ["<></>", "<fragment></fragment>", "<React.Fragment></React.Fragment>", "Both <></> and <React.Fragment></React.Fragment>"],
+        "answer": "Both <></> and <React.Fragment></React.Fragment>"
+    },
+    {
+        "question": "Which hook runs side effects in a component?",
+        "options": ["useContext", "useReducer", "useEffect", "useMemo"],
+        "answer": "useEffect"
+    },
+    {
+        "question": "Which attribute is used to uniquely identify list elements in React?",
+        "options": ["id", "key", "name", "value"],
+        "answer": "key"
+    },
+    {
+        "question": "How do you handle events in React?",
+        "options": ["Using inline handlers", "Using event listeners", "Using props", "Both inline handlers and props"],
+        "answer": "Both inline handlers and props"
+    },
+    {
+        "question": "What does JSON stand for?",
+        "options": ["JavaScript Object Notation", "Java Syntax Object Notation", "JavaScript Oriented Notation", "JavaScript Object Namespace"],
+        "answer": "JavaScript Object Notation"
+    },
+    {
+        "question": "How do you convert a JavaScript object to JSON?",
+        "options": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.to()"],
+        "answer": "JSON.stringify()"
+    },
+    {
+        "question": "Which function parses a JSON string into a JavaScript object?",
+        "options": ["JSON.stringify()", "JSON.toObject()", "JSON.parse()", "JSON.decode()"],
+        "answer": "JSON.parse()"
+    },
+    {
+        "question": "What is the file extension for a JSON file?",
+        "options": [".json", ".jsn", ".js", ".txt"],
+        "answer": ".json"
+    },
+    {
+        "question": "Which of these is valid JSON syntax?",
+        "options": ["{'name':'John'}", "{\"name\":\"John\"}", "{name:'John'}", "{name:John}"],
+        "answer": "{\"name\":\"John\"}"
+    },
+    {
+        "question": "What is TypeScript?",
+        "options": ["A front-end framework", "A CSS preprocessor", "A superset of JavaScript adding static types", "A build tool"],
+        "answer": "A superset of JavaScript adding static types"
+    },
+    {
+        "question": "What file extension does TypeScript use?",
+        "options": [".ts", ".tsx", ".js", ".json"],
+        "answer": ".ts"
+    },
+    {
+        "question": "Which keyword declares a variable with type annotations in TypeScript?",
+        "options": ["var", "let", "const", "All of the above"],
+        "answer": "All of the above"
+    },
+    {
+        "question": "How do you define an interface in TypeScript?",
+        "options": ["interface User {}", "type User = {}", "class User {}", "Both interface and type"],
+        "answer": "Both interface and type"
+    },
+    {
+        "question": "Which TypeScript type means a variable can be any type?",
+        "options": ["any", "unknown", "mixed", "object"],
+        "answer": "any"
+    },
+    {
+        "question": "Which TypeScript file extension is used for React components?",
+        "options": [".ts", ".tsx", ".jsx", ".js"],
+        "answer": ".tsx"
+    }
+]

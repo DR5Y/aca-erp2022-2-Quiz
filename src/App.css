@@ -36,3 +36,56 @@
     transform: rotate(360deg);
   }
 }
+
+.question-container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.options-container label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.results-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.login-container input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.quiz-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.navigation-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
